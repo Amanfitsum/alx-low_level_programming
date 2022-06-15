@@ -12,7 +12,7 @@ return (n >= 32 && n <= 126);
 }
 
 /**
- * printhexes - print hex values for string b in formatted form
+ * printHexes - print hex values for string b in formatted form
  * @b: string to print
  * @start: starting position
  * @end: ending position
@@ -34,7 +34,7 @@ i++;
 }
 
 /**
- * printfASCII - printf ascii values for string b,
+ * printASCII - print ascii values for string b,
  * formatted to replace nonprintable chars with '.'
  * @b: string to print
  * @start: starting position
