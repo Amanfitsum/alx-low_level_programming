@@ -3,22 +3,32 @@
 /**
  * _strpbrk - searches a string for any of a set of bytes.
  * @s: first string.
- * @accept: second string
- * Return: a pointer to the byte in s that matches one of the
- * bytes in accept, or NULL if no such byte is found
+ * @accept: accepted characters
+ *
+ * Return: the string since the first found accepted character
  */
 
 char *_strpbrk(char *s, char *accept)
 {
-unsigned int i, j;
+int a = 0, b;
 
-for (i = 0; *(s + i) != '\0'; i++)
+while (s[a])
 {
-for (J = 0; *(accept + j) != '\0'; j++)
+	b = 0;
+
+while (accept[b])
 {
-if (*(s + i) == *(accept + j))
-return (s + i);
+if (s[a] == accept[b])
+{
+s += a;
+return (s);
 }
+
+b++;
 }
+
+a++;
+}
+
 return ('\0');
 }
