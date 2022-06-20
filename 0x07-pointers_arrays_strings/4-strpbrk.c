@@ -14,7 +14,7 @@ int j;
 while (*s != '\0') /*Declaring WHILE*/
 {
 J = 0;
-while (accept[j] != '\0') /*Evaluating *accept*/
+while (accept[j] != '\0')  /*Evaluating *accept*/
 {
 if (*s == accept[j])
 {
